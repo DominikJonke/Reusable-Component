@@ -1,0 +1,18 @@
+<h1>Sensors and measurements</h1>
+<br>
+<p> </p>
+
+<app-measurement-input [items]="items"></app-measurement-input>
+<app-measurement-input>
+    <div *ngFor="let item of items">
+        <table>
+            <tr *ngFor="let item of items">
+                <td>{{item.name}}</td>
+                <td>{{item.value}}</td>
+                <td>{{item.unit}}</td>
+            </tr>
+        </table>
+    </div>
+</app-measurement-input>
+<br>
+<span *ngFor="let item of items"> {{item.name}}: {{item.value}} {{item.unit}}; </span>
