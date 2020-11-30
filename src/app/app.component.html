@@ -1,6 +1,6 @@
 <h1>Sensors and measurements</h1>
+
 <br>
-<p> </p>
 
 <app-measurement-input [items]="items"></app-measurement-input>
 <app-measurement-input>
@@ -14,5 +14,7 @@
         </table>
     </div>
 </app-measurement-input>
+
 <br>
+
 <span *ngFor="let item of items"> {{item.name}}: {{item.value}} {{item.unit}}; </span>
